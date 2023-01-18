@@ -3,9 +3,26 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20rem;
+  padding: 2rem;
   min-height: 100vh;
-  background-color: rgb(173, 216, 255);
+  background: rgb(7, 7, 94);
+  background: radial-gradient(circle, rgb(7, 19, 94) 0%, rgb(9, 20, 121) 16%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 4rem;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.317);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 2px 8px -1px #00000053;
 }
 
 .description {
@@ -273,31 +290,86 @@
   }
 }
 
-.h1 {
+.input {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  color: rgb(169, 198, 255);
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.row {
+  margin: 20px;
 }
 
 .weather_name {
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: 600;
-
+  text-align: center;
 }
 
 .weather_description {
   font-family: 'Roboto', sans-serif;
-  color: rgb(54, 51, 51);
+  color: rgb(172, 191, 228);
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .weather_info {
   font-family: 'Roboto', sans-serif;
-  color: green;
+  color: rgb(169, 198, 255);
+  align-items: center;
+  text-align: center;
 }
 
-.test {
+.number_unit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.number {
   font-family: 'Roboto', sans-serif;
-  color: green;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #ffffff58 0px 2px 6px;
+}
+
+.unit {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(199, 218, 255, 0.448);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.myName {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.799);
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
