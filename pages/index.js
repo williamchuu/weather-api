@@ -35,12 +35,12 @@ export default function Home() {
   var apiKey = "1cd96b010c115576ff2ccd720cd1edde";
   var lang = "en";
   var units = "metric";
-  // const url = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&appid=${apiKey}&lang=${lang}`;
 
   return (
     <>
       <main className={styles.main}>
+        <h1 className={styles.h1}>Weather</h1>
         {errorMessage}
         <input
           value={location}
@@ -49,13 +49,16 @@ export default function Home() {
           onKeyDown={searchLocation}
           type="text"
         />
-        {data.name}
+        <div className={styles.test}>{data.name}</div>
         {
           weather && weather.map((w, index) => {
             return (
               <div key={index}>
-                <h1>{w.main}</h1>
-                <h2>{w.description}</h2>
+                <h1 className={styles.weather_name}>{w.main}</h1>
+                <h2 className={styles.weather_description}>{w.description}</h2>
+                <div className={styles.weather_info}>Temperature {data.main && data.main.temp}°C</div>
+                <div className={styles.weather_info}>Feels Like {data.main && data.main.feels_like}°C</div>
+                <div className={styles.weather_info}>Wind Speed {data.wind && data.wind.speed}m/s</div>
               </div>
             )
           })
