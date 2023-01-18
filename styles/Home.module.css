@@ -6,8 +6,7 @@
   padding: 2rem;
   min-height: 100vh;
   background: rgb(7, 7, 94);
-  background: radial-gradient(circle, rgb(7, 19, 94) 0%, rgb(9, 20, 121) 16%, rgba(0, 212, 255, 1) 100%);
-
+  background: radial-gradient(circle, rgb(9, 23, 115) 0%, rgb(9, 20, 121) 16%, rgb(0, 163, 195) 100%);
 }
 
 .cont {
@@ -21,6 +20,7 @@
   padding: 4rem;
   border-radius: 50px;
   background: rgba(0, 0, 0, 0.317);
+  background-size: auto 80%;
   backdrop-filter: blur(30px);
   box-shadow: 0px 2px 8px -1px #00000053;
 }
@@ -288,6 +288,15 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.result {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(118, 230, 255);
+  margin: 20px 0 20px 0;
+  text-align: center;
 }
 
 .input {

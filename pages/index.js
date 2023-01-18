@@ -59,7 +59,7 @@ export default function Home() {
             onKeyDown={searchLocation}
             type="text"
           />
-          <div className={styles.test}>{data.name}</div>
+          <div className={styles.result}>{data.name}</div>
           {
             weather && weather.map((w, index) => {
               return (
