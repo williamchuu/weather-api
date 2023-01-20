@@ -9,4 +9,4 @@ https://openweathermap.org/api
 
 ## Visit the Web App
 
-https://weather-api-eosin.vercel.app
+https://weatherchecker1.vercel.app/
