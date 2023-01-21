@@ -6,7 +6,7 @@
   padding: 2rem;
   min-height: 100vh;
   background: rgb(7, 7, 94);
-  background: radial-gradient(circle, rgb(9, 23, 115) 0%, rgb(9, 20, 121) 16%, rgb(0, 163, 195) 100%);
+  background: radial-gradient(circle, rgb(13, 25, 111) 16%, rgb(49, 193, 222) 100%);
 }
 
 .cont {
@@ -19,10 +19,9 @@
   margin: 0 auto;
   padding: 4rem;
   border-radius: 50px;
-  background: rgba(0, 0, 0, 0.317);
-  background-size: auto 80%;
+  background: rgba(22, 29, 95, 0.279);
   backdrop-filter: blur(30px);
-  box-shadow: 0px 2px 8px -1px #00000053;
+  box-shadow: 0px 2px 12px -1px #0000004e;
 }
 
 .description {
@@ -306,9 +305,13 @@
   padding: 0 20px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  color: rgb(169, 198, 255);
+  color: rgb(193, 214, 255);
   background: rgba(255, 255, 255, 0.2);
   outline: none;
+}
+
+.input::placeholder {
+  color: rgb(139, 164, 215);
 }
 
 .h1 {
@@ -328,6 +331,7 @@
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .weather_description {

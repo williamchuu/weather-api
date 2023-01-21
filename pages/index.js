@@ -58,7 +58,7 @@ export default function Home() {
             className={styles.input}
             value={location}
             onChange={event => setLocation(event.target.value)}
-            placeholder="Enter a location"
+            placeholder="Enter a city or location"
             onKeyDown={searchLocation}
             type="text"
           />
@@ -68,7 +68,7 @@ export default function Home() {
               return (
                 <div key={index}>
                   <div className={styles.weather_name}>{w.main}</div>
-                  <div className={styles.weather_description}>{w.description}</div>
+                  <div className={styles.weather_description}>"{w.description}."</div>
 
                   <div className={styles.weather_info}>Temperature </div>
                   <div className={styles.number_unit}>
@@ -88,7 +88,6 @@ export default function Home() {
                     <div className={styles.unit}>m/s</div>
                   </div>
                 </div>
-
               )
             })
           }
